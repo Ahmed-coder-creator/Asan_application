@@ -16,8 +16,14 @@ class MainActivity6 : AppCompatActivity() {
             startActivity(intent)
         }
         binding.cont.setOnClickListener {
-            val intent= Intent(this,MainActivity7::class.java)
-            startActivity(intent)
+            if(binding.email.text.toString().isNullOrEmpty()){
+                binding.email.setError("Cannot be empty")
+            }else{
+                val intent= Intent(this,MainActivity7::class.java)
+                startActivity(intent)
+            }
+
         }
+
     }
 }

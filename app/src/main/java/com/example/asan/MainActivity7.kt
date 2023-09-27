@@ -15,5 +15,22 @@ class MainActivity7 : AppCompatActivity() {
             val intent=Intent(this,MainActivity6::class.java)
             startActivity(intent)
         }
+        binding.change.setOnClickListener {
+            if(binding.create.text.toString().isNullOrEmpty()){
+                binding.create.setError("Cannot be empty")
+            }
+            if(binding.confirm.text.toString().isNullOrEmpty()){
+                binding.confirm.setError("Cannot be empty")
+            }
+            if(binding.create.text.toString()!=binding.confirm.text.toString()){
+                binding.confirm.setError("Uncorrect confirm")
+            }
+            if (binding.create.text.toString().isNullOrEmpty()==false && binding.confirm.text.toString().isNullOrEmpty()==false && binding.create.text.toString()==binding.confirm.text.toString()){
+                val intent=Intent(this,MainActivity8::class.java)
+                intent.putExtra("password",binding.create.text.toString())
+                startActivity(intent)
+            }
+        }
+
     }
 }

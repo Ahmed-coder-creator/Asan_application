@@ -61,6 +61,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView6">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/username"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:hint="Username"
@@ -90,6 +91,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/password"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:hint="Password"
@@ -112,7 +114,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout2" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/login"
         android:layout_width="304dp"
         android:layout_height="50dp"
         android:layout_marginStart="10dp"
@@ -136,7 +138,7 @@
         android:layout_marginEnd="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button"
+        app:layout_constraintTop_toBottomOf="@+id/login"
         app:srcCompat="@drawable/orlogwith" />
 
     <ImageView
@@ -164,10 +166,11 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView7" />
 
     <TextView
-        android:id="@+id/textView10"
+        android:id="@+id/signup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="5dp"
+        android:clickable="true"
         android:text="Sign Up"
         android:textColor="@color/white"
         android:textStyle="bold"
