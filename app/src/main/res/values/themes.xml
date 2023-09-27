@@ -1,0 +1,12 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Asan" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:statusBarColor">#2F5FFF</item>
+    </style>
+    <style name="LoginTextInputLayoutStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="boxStrokeColor">#000000</item>
+        <item name="boxStrokeWidth">1dp</item>
+    </style>
+
+    <style name="Theme.Asan" parent="Base.Theme.Asan" />
+</resources>
