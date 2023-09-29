@@ -27,8 +27,8 @@
         app:srcCompat="@drawable/success" />
 
     <androidx.cardview.widget.CardView
-        android:layout_width="303dp"
-        android:layout_height="136dp"
+        android:layout_width="301dp"
+        android:layout_height="147dp"
         android:layout_marginTop="20dp"
         app:cardCornerRadius="10dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -44,13 +44,14 @@
                 android:id="@+id/textView21"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
                 android:text="İmtahan vaxtı təyin olundu"
                 android:textSize="20sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toStartOf="parent"
-                tools:layout_editor_absoluteY="21dp" />
+                app:layout_constraintTop_toTopOf="parent" />
 
             <Button
                 android:id="@+id/geriye"
@@ -69,6 +70,7 @@
                 android:id="@+id/imtahanvaxti"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
                 app:layout_constraintBottom_toTopOf="@+id/geriye"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"
