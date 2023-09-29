@@ -16,6 +16,7 @@ class MainActivity8 : AppCompatActivity() {
             val intent=Intent(this,MainActivity5::class.java)
             intent.putExtra("password",password)
             startActivity(intent)
+            finish()
         }
     }
 }

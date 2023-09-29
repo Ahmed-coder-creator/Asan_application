@@ -14,6 +14,7 @@ class MainActivity6 : AppCompatActivity() {
         binding.backarrow2.setOnClickListener {
             val intent= Intent(this,MainActivity5::class.java)
             startActivity(intent)
+            finish()
         }
         binding.cont.setOnClickListener {
             if(binding.email.text.toString().isNullOrEmpty()){
@@ -21,6 +22,7 @@ class MainActivity6 : AppCompatActivity() {
             }else{
                 val intent= Intent(this,MainActivity7::class.java)
                 startActivity(intent)
+                finish()
             }
 
         }

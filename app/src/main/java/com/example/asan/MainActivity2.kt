@@ -23,6 +23,10 @@ class MainActivity2 : AppCompatActivity() {
             val intent=Intent(this,MainActivity5::class.java)
             startActivity(intent)
         }
+        binding.imtahanlar.setOnClickListener {
+            val intent=Intent(this,MainActivity10::class.java)
+            startActivity(intent)
+        }
 
     }
 }

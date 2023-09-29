@@ -18,10 +18,17 @@ class MainActivity4 : AppCompatActivity() {
         binding.homemenu.setOnClickListener {
             val intent=Intent(this,MainActivity3::class.java)
             startActivity(intent)
+            finish()
         }
         binding.accountmenu.setOnClickListener {
             val intent=Intent(this,MainActivity5::class.java)
             startActivity(intent)
+            finish()
+        }
+        binding.exammenu.setOnClickListener {
+            val intent=Intent(this,MainActivity10::class.java)
+            startActivity(intent)
+            finish()
         }
     }
     private fun setup(){

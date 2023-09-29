@@ -41,11 +41,11 @@
         app:layout_constraintTop_toTopOf="@+id/imageView3" />
 
     <ScrollView
-        android:id="@+id/scrollView2"
-        android:layout_width="match_parent"
-        android:layout_height="498dp"
+        android:id="@+id/scrolkonullu"
+        android:layout_width="346dp"
+        android:layout_height="462dp"
+        android:visibility="invisible"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
 
@@ -55,9 +55,63 @@
             android:orientation="vertical">
 
             <TextView
+                android:id="@+id/textView16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:text="“Könüllü fəaliyyəti” haqqında ümumi məlumat"
+                android:textColor="#2F5FFF"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="317dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="283dp"
+                android:layout_marginRight="283dp"
+                android:text=" “Könüllü fəaliyyət haqqında” Azərbaycan Respublikasının Qanununa müvafiq olaraq “ASAN xidmət” mərkəzlərində fəaliyyətə başladığı ilk gündən ictimai və sosial məsuliyyəti artıran könüllülük fəaliyyəti həyata keçirilir. Könüllülük fəaliyyəti Azərbaycan Respublikasının qanunvericiliyi ilə qadağan edilməyən, işlərin görülməsi və ya xidmətlərin göstərilməsi ilə bağlı ictimai faydalı və gəlirsiz fəaliyyət hesab olunur. Qanuna müvafiq olaraq “ASAN xidmət” mərkəzlərində könüllü fəaliyyətin əsas etibarı ilə aşağıdakı istiqamətlər üzrə təşkil olunur: Könüllülük fəaliyyətinə şəxslər 2 ay müddətinə qoşulur və müxtəlif əmək vərdişləri aşılayan təlimlərdə iştirak edir. Mərkəzlər üzrə gündəlik olaraq 3 növbədə könüllülük fəaliyyəti təşkil olunur və könüllülər istədikləri növbə üzrə fəaliyyətə qoşula bilər. Növbələrin bölgüsü aşağıdakı kimidir:"
+                android:textSize="17sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:text=" •09:00-12:30 – Birinci növbə \n •12:30-15:30– İkinci növbə \n •15:30-18:00– Üçüncü növbə\n"
+                android:textColor="#2F5FFF"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </ScrollView>
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="354dp"
+        android:layout_height="464dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
                 android:id="@+id/basliq"
-                android:layout_width="365dp"
-                android:layout_height="52dp"
+                android:layout_width="296dp"
+                android:layout_height="49dp"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="320dp"
@@ -73,10 +127,37 @@
                 android:layout_marginStart="20dp"
                 android:layout_marginEnd="333dp"
                 android:layout_marginRight="20dp"
-                android:text=" “ASAN xidmət” mərkəzləri Azərbaycan Respublikasının Prezidenti yanında Vətəndaşlara Xidmət və Sosial İnnovasiyalar üzrə Dövlət Agentliyinin tabeliyində Azərbaycan Respublikası Prezidentinin 2012-ci il 13 iyul tarixli 685 nömrəli Fərmanına əsasən yaradılmışdır. “ASAN xidmət” mərkəzləri dövlət orqanları tərəfindən göstərilən xidmətlərin vahid və əlaqələndirilmiş formada həyata keçirilməsini təmin edən qurumlardır. “ASAN xidmət” mərkəzləri dövlət qulluqçularının fəaliyyətində əhaliyə münasibətdə vətəndaş məmnunluğunun təmin edilməsi istiqamətində yeni yanaşmanın formalaşdırılmasına, ölkədə dövlət qulluqçusu-vətəndaş münasibətlərinin keyfiyyətcə yeni müstəviyə keçməsinə xidmət edir. Mərkəzlərin fəaliyyəti operativlik, şəffaflıq, nəzakətlilik, məsuliyyət və rahatlıq prinsipləri əsasında qurulur.\n“ASAN xidmət” mərkəzlərinin yaradılmasında məqsəd:\n vətəndaşların əlavə xərclərinin və vaxt itkisinin azalması; vətəndaşlara münasibətdə etik qaydalara, nəzakətli davranışa əməl edilməsinə nail olunması; peşəkarlıq səviyyəsinin artırılması; dövlət strukturlarına etimadın daha da gücləndirilməsi; şəffaflığın artırılması, korrupsiyaya qarşı mübarizənin gücləndirilməsi; elektron xidmətlərdən daha geniş istifadə olunması; bu sahədə aparılan institusional islahatların səmərəliliyinin artırılması. \n\n "
+                android:text="• “ASAN xidmət” mərkəzləri Azərbaycan Respublikasının Prezidenti yanında Vətəndaşlara Xidmət və Sosial İnnovasiyalar üzrə Dövlət Agentliyinin tabeliyində Azərbaycan Respublikası Prezidentinin 2012-ci il 13 iyul tarixli 685 nömrəli Fərmanına əsasən yaradılmışdır. \n•“ASAN xidmət” mərkəzləri dövlət orqanları tərəfindən göstərilən xidmətlərin vahid və əlaqələndirilmiş formada həyata keçirilməsini təmin edən qurumlardır.\n• “ASAN xidmət” mərkəzləri dövlət qulluqçularının fəaliyyətində əhaliyə münasibətdə vətəndaş məmnunluğunun təmin edilməsi istiqamətində yeni yanaşmanın formalaşdırılmasına, ölkədə dövlət qulluqçusu-vətəndaş münasibətlərinin keyfiyyətcə yeni müstəviyə keçməsinə xidmət edir.\n•Mərkəzlərin fəaliyyəti operativlik, şəffaflıq, nəzakətlilik, məsuliyyət və rahatlıq prinsipləri əsasında qurulur.\n"
                 android:textSize="17sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:text="“ASAN xidmət” mərkəzlərinin yaradılmasında məqsəd"
+                android:textColor="#2F5FFF"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:text="vətəndaşların əlavə xərclərinin və vaxt itkisinin azalması;\nvətəndaşlara münasibətdə etik qaydalara, nəzakətli davranışa əməl edilməsinə nail olunması;\npeşəkarlıq səviyyəsinin artırılması;\ndövlət strukturlarına etimadın daha da gücləndirilməsi;\nşəffaflığın artırılması, korrupsiyaya qarşı mübarizənin gücləndirilməsi;\nelektron xidmətlərdən daha geniş istifadə olunması;\nbu sahədə aparılan institusional islahatların səmərəliliyinin artırılması.\n"
+                android:textSize="17sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
         </LinearLayout>
     </ScrollView>
 

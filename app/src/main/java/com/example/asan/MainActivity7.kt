@@ -14,6 +14,7 @@ class MainActivity7 : AppCompatActivity() {
         binding.backarrow3.setOnClickListener {
             val intent=Intent(this,MainActivity6::class.java)
             startActivity(intent)
+            finish()
         }
         binding.change.setOnClickListener {
             if(binding.create.text.toString().isNullOrEmpty()){
@@ -29,6 +30,7 @@ class MainActivity7 : AppCompatActivity() {
                 val intent=Intent(this,MainActivity8::class.java)
                 intent.putExtra("password",binding.create.text.toString())
                 startActivity(intent)
+                finish()
             }
         }
 
