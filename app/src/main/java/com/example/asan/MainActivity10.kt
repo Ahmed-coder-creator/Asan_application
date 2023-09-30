@@ -35,5 +35,10 @@ class MainActivity10 : AppCompatActivity() {
             startActivity(intent)
             finish()
         }
+        binding.imtahancavablari.setOnClickListener {
+            val intent=Intent(this,MainActivity13::class.java)
+            startActivity(intent)
+            finish()
+        }
     }
 }

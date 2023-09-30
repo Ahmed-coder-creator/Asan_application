@@ -189,7 +189,7 @@
                 app:layout_constraintTop_toTopOf="@+id/backarrowexam" />
 
             <ImageView
-                android:id="@+id/imageView16"
+                android:id="@+id/imtahancavablari"
                 android:layout_width="128dp"
                 android:layout_height="59dp"
                 android:layout_marginStart="20dp"
