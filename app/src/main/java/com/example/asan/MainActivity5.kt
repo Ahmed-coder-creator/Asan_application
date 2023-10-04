@@ -34,7 +34,7 @@ class MainActivity5 : AppCompatActivity() {
                 binding.password.setError("Cannot be empty")
             }
             if(binding.username.text.toString()==username && binding.password.text.toString()==password){
-                val intent=Intent(this,MainActivity3::class.java)
+                val intent=Intent(this,MainActivity2::class.java)
                 startActivity(intent)
                 finish()
             }

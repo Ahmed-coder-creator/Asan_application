@@ -59,9 +59,9 @@
 
             <ImageView
                 android:id="@+id/searchmenu"
-                android:layout_width="35dp"
-                android:layout_height="35dp"
-                android:layout_marginStart="36dp"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="41dp"
                 android:src="@drawable/search"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/homemenu"
@@ -71,7 +71,7 @@
                 android:id="@+id/eventmenu"
                 android:layout_width="35dp"
                 android:layout_height="35dp"
-                android:layout_marginStart="36dp"
+                android:layout_marginStart="41dp"
                 android:src="@drawable/eventactive"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/searchmenu"
@@ -93,10 +93,9 @@
                 android:id="@+id/accountmenu"
                 android:layout_width="35dp"
                 android:layout_height="35dp"
-                android:layout_marginStart="36dp"
                 android:src="@drawable/account"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/exammenu"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.5" />
         </androidx.constraintlayout.widget.ConstraintLayout>

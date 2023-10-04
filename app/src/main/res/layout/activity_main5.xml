@@ -33,7 +33,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="25dp"
         android:layout_marginTop="16dp"
-        android:text="Log in"
+        android:text="Daxil ol"
         android:textColor="@color/white"
         android:textSize="25sp"
         android:textStyle="bold"
@@ -64,7 +64,7 @@
             android:id="@+id/username"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:hint="Username"
+            android:hint="İstifadəçi adı"
             android:textColor="@color/white" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -94,7 +94,7 @@
             android:id="@+id/password"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:hint="Password"
+            android:hint="Şifrə"
             android:inputType="textPassword"
             android:textColor="@color/white" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -106,7 +106,7 @@
         android:layout_marginTop="10dp"
         android:layout_marginEnd="45dp"
         android:clickable="true"
-        android:text="Forgot password"
+        android:text="Şifrəni unutmuşam"
         android:textAllCaps="false"
         android:textColor="@color/white"
         android:textSize="14sp"
@@ -121,7 +121,7 @@
         android:layout_marginTop="25dp"
         android:layout_marginEnd="10dp"
         android:backgroundTint="@color/white"
-        android:text="Log in"
+        android:text="Daxil ol"
         android:textColor="#2F5FFF"
         android:textSize="20sp"
         app:cornerRadius="10sp"
@@ -158,7 +158,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="50dp"
-        android:text="Don't have account"
+        android:text="Hesabın yoxdu?"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -171,7 +171,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="5dp"
         android:clickable="true"
-        android:text="Sign Up"
+        android:text="Qeydiyyat"
         android:textColor="@color/white"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/textView9"
@@ -185,7 +185,7 @@
         android:layout_marginStart="5dp"
         android:layout_marginTop="10dp"
         android:buttonTint="@color/white"
-        android:text="Remember me"
+        android:text="Yadda saxla"
         android:textColor="@color/white"
         app:layout_constraintStart_toStartOf="@+id/textInputLayout2"
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout2" />

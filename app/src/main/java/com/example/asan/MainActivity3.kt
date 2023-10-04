@@ -44,5 +44,10 @@ class MainActivity3 : AppCompatActivity() {
             startActivity(intent)
             finish()
         }
+        binding.searchmenu.setOnClickListener {
+            val intent=Intent(this,MainActivity16::class.java)
+            startActivity(intent)
+            finish()
+        }
     }
 }

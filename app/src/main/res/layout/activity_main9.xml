@@ -34,7 +34,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="25dp"
         android:layout_marginTop="10dp"
-        android:text="Sign up"
+        android:text="Qeydiyyat"
         android:textColor="@color/white"
         android:textSize="25sp"
         android:textStyle="bold"
@@ -66,8 +66,8 @@
             android:id="@+id/username"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Username"
-            android:textColor="@color/white"/>
+            android:hint="Istifadəçi adı"
+            android:textColor="@color/white" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -93,9 +93,9 @@
             android:id="@+id/email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="E-mail"
+            android:hint="E-poçt"
             android:inputType="textEmailAddress"
-            android:textColor="@color/white"/>
+            android:textColor="@color/white" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -123,9 +123,9 @@
             android:id="@+id/password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Password"
+            android:hint="Şifrə"
             android:inputType="textPassword"
-            android:textColor="@color/white"/>
+            android:textColor="@color/white" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -153,9 +153,9 @@
             android:id="@+id/confirmpassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Confirm password"
+            android:hint="Şifrəni təkrarla"
             android:inputType="textPassword"
-            android:textColor="@color/white"/>
+            android:textColor="@color/white" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
@@ -164,7 +164,7 @@
         android:layout_height="50dp"
         android:layout_marginTop="25dp"
         android:backgroundTint="@color/white"
-        android:text="Sign up"
+        android:text="Qeydiyyat"
         android:textColor="#2F5FFF"
         android:textSize="20sp"
         app:cornerRadius="10dp"

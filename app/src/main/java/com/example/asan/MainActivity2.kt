@@ -27,6 +27,14 @@ class MainActivity2 : AppCompatActivity() {
             val intent=Intent(this,MainActivity10::class.java)
             startActivity(intent)
         }
+        binding.muraciyet.setOnClickListener {
+            val intent=Intent(this,MainActivity14::class.java)
+            startActivity(intent)
+        }
+        binding.sohbetler.setOnClickListener {
+            val intent=Intent(this,MainActivity16::class.java)
+            startActivity(intent)
+        }
 
     }
 }

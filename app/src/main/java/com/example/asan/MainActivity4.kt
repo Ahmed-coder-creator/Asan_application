@@ -30,6 +30,11 @@ class MainActivity4 : AppCompatActivity() {
             startActivity(intent)
             finish()
         }
+        binding.searchmenu.setOnClickListener {
+            val intent=Intent(this,MainActivity16::class.java)
+            startActivity(intent)
+            finish()
+        }
     }
     private fun setup(){
         binding.rvEvents.layoutManager=LinearLayoutManager(this)

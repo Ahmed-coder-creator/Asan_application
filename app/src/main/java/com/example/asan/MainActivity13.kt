@@ -62,5 +62,15 @@ class MainActivity13 : AppCompatActivity() {
             startActivity(intent)
             finish()
         }
+        binding.searchmenu.setOnClickListener {
+            val intent=Intent(this,MainActivity16::class.java)
+            startActivity(intent)
+            finish()
+        }
+        binding.imageView22.setOnClickListener {
+            val intent=Intent(this,MainActivity10::class.java)
+            startActivity(intent)
+            finish()
+        }
     }
 }

@@ -4,13 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity10">
+    android:background="#F1F3FF"
+    tools:context=".MainActivity15">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout2"
         android:layout_width="match_parent"
         android:layout_height="61dp"
-        android:background="#FFFFFF"
+        android:background="#F1F3FF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
@@ -61,7 +62,7 @@
                 android:layout_width="35dp"
                 android:layout_height="35dp"
                 android:layout_marginStart="36dp"
-                android:src="@drawable/examactive"
+                android:src="@drawable/exam"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/eventmenu"
                 app:layout_constraintTop_toTopOf="parent"
@@ -80,134 +81,70 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <TextView
-        android:id="@+id/textView14"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:fontFamily="helvetica"
-        android:text="ASAN KÖNÜLLÜ"
-        android:textColor="#2F5FFF"
-        android:textSize="15sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.428"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <ImageView
-        android:id="@+id/imageView13"
-        android:layout_width="25dp"
-        android:layout_height="25dp"
-        android:layout_marginStart="15dp"
-        app:layout_constraintBottom_toBottomOf="@+id/textView14"
-        app:layout_constraintStart_toEndOf="@+id/textView14"
-        app:layout_constraintTop_toTopOf="@+id/textView14"
-        app:srcCompat="@drawable/el" />
-
-    <ImageView
-        android:id="@+id/imageView14"
-        android:layout_width="199dp"
-        android:layout_height="171dp"
-        android:layout_marginTop="30dp"
+        android:id="@+id/imageView19"
+        android:layout_width="113dp"
+        android:layout_height="105dp"
+        android:layout_marginTop="100dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView13"
-        app:srcCompat="@drawable/imtahangeseng" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/successmuraciyyet" />
 
     <androidx.cardview.widget.CardView
-        android:layout_width="313dp"
-        android:layout_height="222dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="10dp"
-        app:cardCornerRadius="10dp"
-        app:cardElevation="10dp"
+        android:layout_width="318dp"
+        android:layout_height="172dp"
+        android:layout_marginTop="20dp"
+        app:cardCornerRadius="20dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView14">
+        app:layout_constraintTop_toBottomOf="@+id/imageView19">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
             <TextView
-                android:id="@+id/textView15"
+                android:id="@+id/textView42"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="25dp"
                 android:layout_marginTop="20dp"
-                android:text="asan"
-                android:textSize="20sp"
+                android:text="Müraciətiniz qeydə alındı"
+                android:textSize="22sp"
                 android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
-            <ImageView
-                android:id="@+id/imageView15"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:layout_marginStart="5dp"
-                app:layout_constraintBottom_toBottomOf="@+id/textView15"
-                app:layout_constraintStart_toEndOf="@+id/textView15"
-                app:layout_constraintTop_toTopOf="@+id/textView15"
-                app:srcCompat="@drawable/aktlogo" />
-
             <TextView
-                android:id="@+id/textView19"
+                android:id="@+id/textView43"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="5dp"
-                android:text="könüllu"
-                android:textSize="20sp"
+                android:layout_marginTop="15dp"
+                android:text="Təşəkkür edirik"
+                android:textColor="#2F5FFF"
+                android:textSize="18sp"
                 android:textStyle="bold"
-                app:layout_constraintBottom_toBottomOf="@+id/imageView15"
-                app:layout_constraintStart_toEndOf="@+id/imageView15"
-                app:layout_constraintTop_toTopOf="@+id/imageView15" />
-
-            <ImageView
-                android:id="@+id/backarrowexam"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:layout_marginStart="15dp"
-                android:layout_marginTop="20dp"
-                android:clickable="true"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView15"
-                app:srcCompat="@drawable/backarrow" />
-
-            <TextView
-                android:id="@+id/textView20"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="5dp"
-                android:text="IMTAHAN"
-                android:textSize="16sp"
-                android:textStyle="bold"
-                app:layout_constraintBottom_toBottomOf="@+id/backarrowexam"
-                app:layout_constraintStart_toEndOf="@+id/backarrowexam"
-                app:layout_constraintTop_toTopOf="@+id/backarrowexam" />
-
-            <ImageView
-                android:id="@+id/imtahancavablari"
-                android:layout_width="128dp"
-                android:layout_height="59dp"
-                android:layout_marginStart="20dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/backarrowexam"
-                app:layout_constraintVertical_bias="0.5"
-                app:srcCompat="@drawable/imtahancavablari" />
-
-            <ImageView
-                android:id="@+id/imtahantarixleri"
-                android:layout_width="128dp"
-                android:layout_height="59dp"
-                android:layout_marginEnd="20dp"
-                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView20"
-                app:srcCompat="@drawable/imtahantarixi" />
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView42" />
+
+            <Button
+                android:id="@+id/esassehifeye"
+                android:layout_width="245dp"
+                android:layout_height="49dp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#2F5FFF"
+                android:clickable="true"
+                android:text="Əsas səhifəyə qayıt"
+                app:cornerRadius="15dp"
+                app:icon="@drawable/backarrow_white"
+                app:iconPadding="0dp"
+                app:iconSize="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView43" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

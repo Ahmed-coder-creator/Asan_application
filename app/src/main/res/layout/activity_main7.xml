@@ -54,7 +54,7 @@
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="10dp"
                 android:backgroundTint="#2F5FFF"
-                android:text="Change"
+                android:text="Dəyiş"
                 android:textSize="17sp"
                 app:cornerRadius="10dp"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -83,7 +83,7 @@
                     android:id="@+id/create"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Create new password"
+                    android:hint="Yeni şifrə"
                     android:inputType="textPassword" />
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -110,7 +110,7 @@
                     android:id="@+id/confirm"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Confirm new password"
+                    android:hint="Yeni şifrənin  təkrarı"
                     android:inputType="textPassword" />
             </com.google.android.material.textfield.TextInputLayout>
 
