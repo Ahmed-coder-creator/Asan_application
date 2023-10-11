@@ -22,6 +22,7 @@ class EventAdapter( val context: Context):RecyclerView.Adapter<EventAdapter.Even
     override fun onBindViewHolder(holder: EventsViewHolder, position: Int) {
         val item=eventsList[position]
         holder.binding.eventname.text=item.title
+        holder.binding.imageView.setImageResource(item.image)
     }
 
     fun updateAdapter(list:List<EventData>){

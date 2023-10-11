@@ -3,6 +3,7 @@ package com.example.asan
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import com.example.asan.databinding.ActivityMain6Binding
 
 class MainActivity6 : AppCompatActivity() {
@@ -11,6 +12,7 @@ class MainActivity6 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding= ActivityMain6Binding.inflate(layoutInflater)
         setContentView(binding.root)
+        binding.hinted6.text=intent.getStringExtra("username").toString()
         binding.backarrow2.setOnClickListener {
             val intent= Intent(this,MainActivity5::class.java)
             startActivity(intent)
@@ -18,14 +20,16 @@ class MainActivity6 : AppCompatActivity() {
         }
         binding.cont.setOnClickListener {
             if(binding.email.text.toString().isNullOrEmpty()){
-                binding.email.setError("Cannot be empty")
+                binding.email.setError("Boş ola bilməz")
             }else{
-                val intent= Intent(this,MainActivity7::class.java)
+                val intent = Intent(this, MainActivity7::class.java)
+                intent.putExtra("username6",binding.hinted6.text)
                 startActivity(intent)
                 finish()
+                }
+
             }
 
         }
 
     }
-}

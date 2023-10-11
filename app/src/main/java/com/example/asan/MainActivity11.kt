@@ -14,14 +14,14 @@ class MainActivity11 : AppCompatActivity() {
         binding = ActivityMain11Binding.inflate(layoutInflater)
         setContentView(binding.root)
         var date= arrayListOf<DateData>(
-            DateData("1","9","2023","K206 2-ci qiymətləndirilməsi "),
-            DateData("2","9","2023","K208 1-ci qiymətləndirilməsi"),
-            DateData("15","9","2023","K207 2-ci qiymətləndirilməsi"),
-            DateData("16","9","2023","K209 1-ci qiymətləndirilməsi"),
-            DateData("1","10","2023","K208 2-ci qiymətləndirilməsi "),
-            DateData("2","10","2023","K210 1-ci qiymətləndirilməsi"),
-            DateData("15","10","2023","K209 2-ci qiymətləndirilməsi"),
-            DateData("16","10","2023","K211 1-ci qiymətləndirilməsi")
+            DateData("1","9","2023","K206 2-ci qiymətləndirilmə"),
+            DateData("2","9","2023","K208 1-ci qiymətləndirilmə"),
+            DateData("15","9","2023","K207 2-ci qiymətləndirilmə"),
+            DateData("16","9","2023","K209 1-ci qiymətləndirilmə"),
+            DateData("1","10","2023","K208 2-ci qiymətləndirilmə"),
+            DateData("2","10","2023","K210 1-ci qiymətləndirilmə"),
+            DateData("15","10","2023","K209 2-ci qiymətləndirilmə"),
+            DateData("16","10","2023","K211 1-ci qiymətləndirilmə")
         )
         binding.calendarView2.setOnDateChangeListener { calendarView, year, month, day ->
             binding.textView24.text=""

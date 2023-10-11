@@ -1,12 +1,14 @@
 package com.example.asan
 
+import android.content.Context
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.asan.databinding.ItemUserOnlineBinding
 
-class OnlineusersAdapter:RecyclerView.Adapter<OnlineusersAdapter.OnlineusersViewHolder>(){
+class OnlineusersAdapter():RecyclerView.Adapter<OnlineusersAdapter.OnlineusersViewHolder>(){
     inner class OnlineusersViewHolder(val binding:ItemUserOnlineBinding):RecyclerView.ViewHolder(binding.root)
     private val onlinelist= ArrayList<Int>()
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): OnlineusersViewHolder {

@@ -10,7 +10,7 @@ import java.util.ArrayList
 class MainActivity16 : AppCompatActivity() {
     private lateinit var binding: ActivityMain16Binding
     private val adapter = OnlineusersAdapter()
-    private val chatsadapter = ChatsAdapter()
+    private val chatsadapter = ChatsAdapter(this)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMain16Binding.inflate(layoutInflater)
@@ -20,6 +20,7 @@ class MainActivity16 : AppCompatActivity() {
         binding.backchat.setOnClickListener {
             val intent = Intent(this, MainActivity2::class.java)
             startActivity(intent)
+            finish()
         }
         binding.accountmenu.setOnClickListener {
             val intent = Intent(this, MainActivity5::class.java)
@@ -45,14 +46,14 @@ class MainActivity16 : AppCompatActivity() {
     }
 
     private fun setup() {
-        binding.recyclerView.layoutManager =
-            LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
+        binding.recyclerView.layoutManager = LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
         binding.recyclerView.adapter = adapter
         val onlineusers = arrayListOf<Int>(
             R.drawable.onlineuser1,
             R.drawable.onlineuser2,
             R.drawable.onlineuser3,
-            R.drawable.onlineuser4
+            R.drawable.onlineuser4,
+            R.drawable.onlineuser5
         )
         adapter.updateAdapter(onlineusers)
     }
@@ -61,24 +62,10 @@ class MainActivity16 : AppCompatActivity() {
         binding.rvChats.layoutManager = LinearLayoutManager(this)
         binding.rvChats.adapter = chatsadapter
         val chats = arrayListOf<ChatsData>(
-            ChatsData(
-                "Əhməd Abışev", "15:30", R.drawable.ahmadabisev, arrayListOf(
-                    messagesdata("Salam işlər necə gedir", true, "12:15")
-                )
-            ),
-            ChatsData("Sevil Mirzəyeva", "16:24", R.drawable.sevilmirzayeva, arrayListOf(
-                messagesdata("Cavablar qeyd olunub", true, "17:15")
-            )
-            ),
-            ChatsData("Zərifə Qasımova","03:11",R.drawable.zarifaqasimova, arrayListOf(
-                messagesdata("1-ci hissədə qeyd olunub",false,"05:15")
-            )  ),
-            ChatsData("Nuray Safar","18:14",R.drawable.nuraysafar, arrayListOf(
-                messagesdata("Bu gün biraz gecikə bilərəm",true,"15:30")
-            )),
-            ChatsData("Tunal Həsənov","06:12",R.drawable.tunalhasanov, arrayListOf(
-                messagesdata("Tamam həll edərik",false,"12:15")
-            ))
+            ChatsData("Zərifə Qasimova", "15:30", R.drawable.zarifaqasimova,"Dostlar necə gedir işlər"),
+            ChatsData("Sevil Mirzəyeva", "16:24", R.drawable.sevilmirzayeva,"Bu gün biraz gecikəcəm"),
+            ChatsData("Nuray Safar","18:14",R.drawable.nuraysafar,"1-ci hisədə qeyd olunub"),
+            ChatsData("Tunal Həsənov","06:12",R.drawable.tunalhasanov,"Tamam həll edərik")
         )
         chatsadapter.updateAdapter(chats)
     }

@@ -49,5 +49,20 @@ class MainActivity3 : AppCompatActivity() {
             startActivity(intent)
             finish()
         }
+        binding.hamburger.setOnClickListener {
+            binding.hamburgerlayout.visibility=View.VISIBLE
+        }
+        binding.hamburgerclose.setOnClickListener {
+            binding.hamburgerlayout.visibility=View.INVISIBLE
+        }
+        binding.shexsi.setOnClickListener {
+            val intent=Intent(this,MainActivity19::class.java)
+            startActivity(intent)
+        }
+        binding.exitmenu.setOnClickListener {
+            val intent=Intent(this,MainActivity5::class.java)
+            startActivity(intent)
+            finish()
+        }
     }
 }

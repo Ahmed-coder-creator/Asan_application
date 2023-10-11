@@ -68,7 +68,7 @@ class MainActivity14 : AppCompatActivity() {
             startActivity(intent)
             finish()
         }
-        val spinner=findViewById<Spinner>(R.id.spinner)
+        val spinner=binding.spinner
         val arrayAdapter=ArrayAdapter<String>(this,android.R.layout.simple_spinner_dropdown_item,patronymic)
         spinner.adapter=arrayAdapter
     }

@@ -13,22 +13,24 @@ class MainActivity9 : AppCompatActivity() {
         setContentView(binding.root)
         binding.signupbutton.setOnClickListener {
             if (binding.username.text.toString().isNullOrEmpty()){
-                binding.username.setError("Cannot be empty")
+                binding.username.setError("Boş ola bilməz")
             }
             if (binding.email.text.toString().isNullOrEmpty()){
-                binding.email.setError("Cannot be empty")
+                binding.email.setError("Boş ola bilməz")
             }
             if (binding.password.text.toString().isNullOrEmpty()){
-                binding.password.setError("Cannot be empty")
+                binding.password.setError("Boş ola bilməz")
             }
             if (binding.confirmpassword.text.toString().isNullOrEmpty()){
-                binding.confirmpassword.setError("Cannot be empty")
+                binding.confirmpassword.setError("Boş ola bilməz")
             }
             if(binding.password.text.toString()!=binding.confirmpassword.text.toString()){
-                binding.confirmpassword.setError("Uncorrect confirm")
+                binding.confirmpassword.setError("Şifrənin təkrarı doğru deyil")
             }
-            if(binding.username.text.toString().isNullOrEmpty()==false && binding.email.text.toString().isNullOrEmpty()==false &&binding.password.text.toString().isNullOrEmpty()==false && binding.confirmpassword.text.toString().isNullOrEmpty() && binding.password.text.toString()==binding.confirmpassword.text.toString()){
+            if(binding.username.text.toString().isNullOrEmpty()==false && binding.email.text.toString().isNullOrEmpty()==false &&binding.password.text.toString().isNullOrEmpty()==false && binding.confirmpassword.text.toString().isNullOrEmpty()==false && binding.password.text.toString()==binding.confirmpassword.text.toString()){
                 val intent=Intent(this,MainActivity5::class.java)
+                intent.putExtra("usernameregister",binding.username.text.toString())
+                intent.putExtra("passwordregister",binding.password.text.toString())
                 startActivity(intent)
                 finish()
             }
