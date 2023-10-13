@@ -16,10 +16,8 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_marginStart="20dp"
-            android:layout_marginEnd="20dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent">
@@ -28,7 +26,7 @@
                 android:id="@+id/homemenu"
                 android:layout_width="35dp"
                 android:layout_height="35dp"
-                android:src="@drawable/homeactive"
+                android:src="@drawable/home"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
@@ -71,9 +69,10 @@
                 android:id="@+id/accountmenu"
                 android:layout_width="35dp"
                 android:layout_height="35dp"
-                android:src="@drawable/account"
+                android:layout_marginStart="36dp"
+                android:src="@drawable/profileactive"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/exammenu"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.5" />
         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -138,7 +137,7 @@
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:hint="Ad"
+                    android:hint="@string/Ad"
                     android:text="Əhməd"
                     android:textColor="#2F5FFF"
                     android:textColorHint="#2F5FFF" />
@@ -157,7 +156,7 @@
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:hint="Soyad"
+                    android:hint="@string/Soyad"
                     android:text="Abışev"
                     android:textColor="#2F5FFF" />
             </com.google.android.material.textfield.TextInputLayout>
@@ -177,7 +176,7 @@
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Ata adı"
+                    android:hint="@string/Ataadi"
                     android:text="Ənvər"
                     android:textColor="#2F5FFF" />
             </com.google.android.material.textfield.TextInputLayout>
@@ -320,7 +319,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
         android:layout_marginTop="20dp"
-        android:text="Şəkil"
+        android:text="@string/Shekil"
         android:textSize="15sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView56" />
@@ -339,13 +338,49 @@
         android:id="@+id/textView56"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
         android:text="Şəxsi məlumatlar"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/backtohomepage"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/backtohomepage"
         app:layout_constraintTop_toTopOf="@+id/backtohomepage" />
+
+    <ImageView
+        android:id="@+id/menuselectbox"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="60dp"
+        android:clickable="true"
+        android:contextClickable="false"
+        app:layout_constraintBottom_toBottomOf="@+id/textView56"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView56"
+        app:layout_constraintTop_toTopOf="@+id/textView56"
+        app:srcCompat="@drawable/selectmenuup" />
+
+    <TextView
+        android:id="@+id/elageinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:clickable="true"
+        android:text=" Əlaqə məlumatları"
+        android:textSize="15sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="@+id/textView56"
+        app:layout_constraintTop_toBottomOf="@+id/textView56" />
+
+    <ImageView
+        android:id="@+id/selectmenuboxbutton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:clickable="true"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/menuselectbox"
+        app:layout_constraintEnd_toEndOf="@+id/menuselectbox"
+        app:layout_constraintStart_toStartOf="@+id/menuselectbox"
+        app:layout_constraintTop_toTopOf="@+id/menuselectbox"
+        app:srcCompat="@drawable/selectmenudoun" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

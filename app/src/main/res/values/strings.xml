@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Asan</string>
+    <string name="Ad">Ad<font color='#FF0000'>*</font></string>
+    <string name="Soyad">Soyad<font color='#FF0000'>*</font></string>
+    <string name="Ataadi">Ata adı<font color='#FF0000'>*</font></string>
+    <string name="Mobile">Mobil nömrə<font color='#FF0000'>*</font></string>
+    <string name="Shekil">Şəkil<font color='#FF0000'>*</font></string>
+    <string name="email">E-poçt ünvanı<font color='#FF0000'>*</font></string>
+    <string name="yasasdigiyer">Yaşayış yeri<font color='#FF0000'>*</font></string>
+    <string name="qeydiyyatunvani">Qeydiyyat ünvanı<font color='#FF0000'>*</font></string>
 </resources>

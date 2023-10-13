@@ -64,5 +64,9 @@ class MainActivity3 : AppCompatActivity() {
             startActivity(intent)
             finish()
         }
+        binding.elaqe.setOnClickListener {
+            val intent=Intent(this,MainActivity20::class.java)
+            startActivity(intent)
+        }
     }
 }

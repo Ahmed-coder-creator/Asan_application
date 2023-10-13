@@ -4,6 +4,7 @@ import android.R
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.widget.ArrayAdapter
 import com.example.asan.databinding.ActivityMain19Binding
 
@@ -34,6 +35,11 @@ class MainActivity19 : AppCompatActivity() {
             startActivity(intent)
             finish()
         }
+        binding.homemenu.setOnClickListener {
+            val intent= Intent(this,MainActivity3::class.java)
+            startActivity(intent)
+            finish()
+        }
         binding.exammenu.setOnClickListener {
             val intent=Intent(this,MainActivity10::class.java)
             startActivity(intent)
@@ -44,15 +50,26 @@ class MainActivity19 : AppCompatActivity() {
             startActivity(intent)
             finish()
         }
-        binding.accountmenu.setOnClickListener {
-            val intent=Intent(this,MainActivity5::class.java)
-            startActivity(intent)
-            finish()
-        }
         binding.backtohomepage.setOnClickListener {
             val intent=Intent(this,MainActivity3::class.java)
             startActivity(intent)
             finish()
         }
+        binding.menuselectbox.setOnClickListener {
+            binding.elageinfo.visibility=View.VISIBLE
+            binding.menuselectbox.visibility=View.INVISIBLE
+            binding.selectmenuboxbutton.visibility=View.VISIBLE
+        }
+        binding.selectmenuboxbutton.setOnClickListener {
+            binding.elageinfo.visibility=View.INVISIBLE
+            binding.menuselectbox.visibility=View.VISIBLE
+            binding.selectmenuboxbutton.visibility=View.INVISIBLE
+        }
+        binding.elageinfo.setOnClickListener {
+            val intent=Intent(this,MainActivity20::class.java)
+            startActivity(intent)
+            finish()
+        }
+
     }
 }

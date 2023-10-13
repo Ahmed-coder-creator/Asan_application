@@ -33,6 +33,7 @@ class MainActivity17 : AppCompatActivity() {
                 message+=MessagesData(binding.mesajlar.text.toString(),"00:00",true)
                 binding.rvMesssages.adapter=adapter
                 adapter.updateAdapter(message)
+                binding.mesajlar.setText("")
                 message+=MessagesData("Salam","00:00",false)
                 binding.rvMesssages.adapter=adapter
                 adapter.updateAdapter(message)
@@ -40,6 +41,7 @@ class MainActivity17 : AppCompatActivity() {
                 message+=MessagesData(binding.mesajlar.text.toString(),"00:00",true)
                 binding.rvMesssages.adapter=adapter
                 adapter.updateAdapter(message)
+                binding.mesajlar.setText("")
                 message+=MessagesData("Yaxşıyam.Sən necəsən","00:00",false)
                 binding.rvMesssages.adapter=adapter
                 adapter.updateAdapter(message)
@@ -47,6 +49,7 @@ class MainActivity17 : AppCompatActivity() {
                 message+=MessagesData(binding.mesajlar.text.toString(),"00:00",true)
                 binding.rvMesssages.adapter=adapter
                 adapter.updateAdapter(message)
+                binding.mesajlar.setText("")
             }
 
         }
