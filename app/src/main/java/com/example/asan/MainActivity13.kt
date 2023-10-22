@@ -16,13 +16,16 @@ class MainActivity13 : AppCompatActivity() {
             qiymetlendirme("Aynur Ağayeva","44","28-07-2023")
         )
         var qiymetlendirme2= arrayListOf<qiymetlendirme>(
-            qiymetlendirme("Cavad Şüküröv","48","30-08-2023"),
+            qiymetlendirme("Cavad Şükürov","48","30-08-2023"),
             qiymetlendirme("Azad Babayev","48","30-08-2023")
         )
         var telimler= arrayListOf<telimdata>(
-            telimdata("Təyyar Amanov","K.fəaliyəti","orta","29.06.2023"),
-            telimdata("Nazlı Rəhimova","İşgüzar e.","orta","17.07.2023"),
-            telimdata("Röya İbrahimova","V.i.olunması","orta","03.09.2023")
+            telimdata("Nazlı R","K.fəaliyəti","orta","29-06-2023"),
+            telimdata("Röya İ(A)","V.i.olunması","orta","13-09-2023"),
+            telimdata("Röya İ(A)","S.i.olun","orta","03-09-2023"),
+            telimdata("Nazlı R","İşgüzar e.","orta","17-07-2023"),
+            telimdata("Röya İ(A)","Ü.bacarıqlar","orta","16-09-2023")
+
         )
         for(q in qiymetlendirme1){
             binding.qiymetlendireninadi1.text=binding.qiymetlendireninadi1.text.toString()+"\n"+q.adi+"\n"
@@ -36,11 +39,12 @@ class MainActivity13 : AppCompatActivity() {
             binding.qiymetlendirmetarixi2.text=binding.qiymetlendirmetarixi2.text.toString()+"\n"+r.tarix+"\n"
             binding.textView37.text=(binding.textView37.text.toString().toInt()+r.qiymet.toInt()).toString()
         }
+        binding.textView59.text= (binding.textView37.text.toString().toInt()+binding.textView31.text.toString().toInt()).toString()
         for (t in telimler){
             binding.telimqiymetadi.text=binding.telimqiymetadi.text.toString()+"\n"+t.qiymetlendirmeniaparan+"\n"
-            binding.telimadi.text=binding.telimadi.text.toString()+"\n"+t.teliminadi+"\n\n"
-            binding.istiraksevviyesitext.text=binding.istiraksevviyesitext.text.toString()+"\n"+t.istirakseviyesi+"\n\n"
-            binding.qiymetlendirmenintarixi.text=binding.qiymetlendirmenintarixi.text.toString()+"\n"+t.qiymetlendirmenintarixi+"\n\n"
+            binding.telimadi.text=binding.telimadi.text.toString()+"\n"+t.teliminadi+"\n"
+            binding.istiraksevviyesitext.text=binding.istiraksevviyesitext.text.toString()+"\n"+t.istirakseviyesi+"\n"
+            binding.qiymetlendirmenintarixi.text=binding.qiymetlendirmenintarixi.text.toString()+"\n"+t.qiymetlendirmenintarixi+"\n"
         }
         binding.exammenu.setOnClickListener {
             val intent= Intent(this,MainActivity10::class.java)
@@ -68,6 +72,11 @@ class MainActivity13 : AppCompatActivity() {
             finish()
         }
         binding.imageView22.setOnClickListener {
+            val intent=Intent(this,MainActivity10::class.java)
+            startActivity(intent)
+            finish()
+        }
+        binding.imageView30.setOnClickListener {
             val intent=Intent(this,MainActivity10::class.java)
             startActivity(intent)
             finish()

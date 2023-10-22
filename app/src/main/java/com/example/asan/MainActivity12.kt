@@ -21,7 +21,11 @@ class MainActivity12 : AppCompatActivity() {
             startActivity(intent)
             finish()
         }
-        binding.imtahanvaxti.text=intent.getStringExtra("vaxt")
+        binding.imtahanvaxti.setOnClickListener {
+            val intent= Intent(this,MainActivity11::class.java)
+            startActivity(intent)
+            finish()
+        }
         binding.exammenu.setOnClickListener {
             val intent= Intent(this,MainActivity10::class.java)
             startActivity(intent)

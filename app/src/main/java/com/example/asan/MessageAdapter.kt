@@ -40,6 +40,7 @@ class MessageAdapter:RecyclerView.Adapter<MessageAdapter.MessageViewHolder>() {
                 LinearLayout.LayoutParams.WRAP_CONTENT,
                 LinearLayout.LayoutParams.WRAP_CONTENT
             )
+
             holder.binding.card.layoutParams = layoutParams
             holder.binding.card.requestLayout()
         }

@@ -52,5 +52,53 @@ class MainActivity20 : AppCompatActivity() {
             startActivity(intent)
             finish()
         }
+        binding.lagvet.setOnClickListener {
+            val intent=Intent(this,MainActivity3::class.java)
+            startActivity(intent)
+            finish()
+        }
+        binding.hamburger2.setOnClickListener {
+            binding.hamburgerlayout.visibility=View.VISIBLE
+        }
+        binding.hamburgerclose.setOnClickListener {
+            binding.hamburgerlayout.visibility=View.INVISIBLE
+        }
+        binding.shexsi.setOnClickListener {
+            val intent=Intent(this,MainActivity19::class.java)
+            startActivity(intent)
+            finish()
+        }
+        binding.exitmenu.setOnClickListener {
+            val intent=Intent(this,MainActivity5::class.java)
+            startActivity(intent)
+            finish()
+        }
+        binding.elaqe.setOnClickListener {
+            val intent=Intent(this,MainActivity20::class.java)
+            startActivity(intent)
+            finish()
+        }
+        binding.yaddasaxla.setOnClickListener {
+            if (binding.mobile.text.isNullOrEmpty()){
+                binding.mobile.setError("Boş ola bilməz")
+            }
+            if (binding.email.text.isNullOrEmpty()){
+                binding.email.setError("Boş ola bilməz")
+            }
+            if (binding.yasayis.text.isNullOrEmpty()){
+                binding.yasayis.setError("Boş ola bilməz")
+            }
+            if (binding.qeydiyyat.text.isNullOrEmpty()){
+                binding.qeydiyyat.setError("Boş ola bilməz")
+            }
+            if("+" !in binding.mobile.text.toString()){
+                binding.mobile.setError("Nömrənin formatı düzgün deyil")
+            }
+            if(binding.mobile.text.isNullOrEmpty()==false && binding.email.text.isNullOrEmpty()==false && binding.yasayis.text.isNullOrEmpty()==false && binding.qeydiyyat.text.isNullOrEmpty()==false && "+" in binding.mobile.text.toString()){
+                val intent=Intent(this,MainActivity3::class.java)
+                startActivity(intent)
+                finish()
+            }
+        }
     }
 }

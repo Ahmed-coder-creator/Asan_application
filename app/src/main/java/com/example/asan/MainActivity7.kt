@@ -28,7 +28,10 @@ class MainActivity7 : AppCompatActivity() {
             if(binding.create.text.toString()!=binding.confirm.text.toString()){
                 binding.confirm.setError("Şifrənin təkrarı doğru deyil")
             }
-            if (binding.create.text.toString().isNullOrEmpty()==false && binding.confirm.text.toString().isNullOrEmpty()==false && binding.create.text.toString()==binding.confirm.text.toString()){
+            if (binding.create.text.toString().length<8){
+                binding.create.setError("Şifrənin uzunluğu 8 simvoldan az ola bilməz")
+            }
+            if (binding.create.text.toString().isNullOrEmpty()==false && binding.confirm.text.toString().isNullOrEmpty()==false && binding.create.text.toString()==binding.confirm.text.toString() && binding.create.text.toString().length>=8){
                 val intent=Intent(this,MainActivity8::class.java)
                 intent.putExtra("newpassword",binding.create.text.toString())
                 intent.putExtra("username",binding.hinted.text)

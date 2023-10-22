@@ -17,12 +17,14 @@ class MainActivity3 : AppCompatActivity() {
             binding.konullu.setImageResource(R.drawable.akinfoactive)
             binding.scrollView2.visibility=View.INVISIBLE
             binding.scrolkonullu.visibility=View.VISIBLE
+            binding.imageView38.visibility=View.VISIBLE
         }
         binding.imageView5.setOnClickListener {
             binding.imageView5.setImageResource(R.drawable.asanxidmatinfoactive)
             binding.konullu.setImageResource(R.drawable.konullu)
             binding.scrollView2.visibility=View.VISIBLE
             binding.scrolkonullu.visibility=View.INVISIBLE
+            binding.imageView38.visibility=View.INVISIBLE
         }
         binding.back.setOnClickListener {
             val intent=Intent(this,MainActivity2::class.java)
@@ -58,6 +60,7 @@ class MainActivity3 : AppCompatActivity() {
         binding.shexsi.setOnClickListener {
             val intent=Intent(this,MainActivity19::class.java)
             startActivity(intent)
+            finish()
         }
         binding.exitmenu.setOnClickListener {
             val intent=Intent(this,MainActivity5::class.java)
@@ -66,6 +69,11 @@ class MainActivity3 : AppCompatActivity() {
         }
         binding.elaqe.setOnClickListener {
             val intent=Intent(this,MainActivity20::class.java)
+            startActivity(intent)
+            finish()
+        }
+        binding.imageView38.setOnClickListener {
+            val intent=Intent(this,MainActivity14::class.java)
             startActivity(intent)
         }
     }

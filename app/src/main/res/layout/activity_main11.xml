@@ -18,10 +18,12 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:layout_height="48dp"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toStartOf="parent">
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
             <ImageView
                 android:id="@+id/homemenu"
@@ -35,12 +37,12 @@
 
             <ImageView
                 android:id="@+id/searchmenu"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:layout_marginStart="41dp"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="36dp"
                 android:src="@drawable/search"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/homemenu"
+                app:layout_constraintStart_toEndOf="@+id/exammenu"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.5" />
 
@@ -48,10 +50,10 @@
                 android:id="@+id/eventmenu"
                 android:layout_width="35dp"
                 android:layout_height="35dp"
-                android:layout_marginStart="41dp"
+                android:layout_marginStart="36dp"
                 android:src="@drawable/event"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/searchmenu"
+                app:layout_constraintStart_toEndOf="@+id/homemenu"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.5" />
 
@@ -70,10 +72,10 @@
                 android:id="@+id/accountmenu"
                 android:layout_width="35dp"
                 android:layout_height="35dp"
-                android:layout_marginStart="41dp"
+                android:layout_marginStart="36dp"
                 android:src="@drawable/account"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/exammenu"
+                app:layout_constraintStart_toEndOf="@+id/searchmenu"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.5" />
         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -113,7 +115,7 @@
     <androidx.cardview.widget.CardView
         android:id="@+id/vaxt"
         android:layout_width="300dp"
-        android:layout_height="151dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
         android:visibility="invisible"
         app:cardCornerRadius="10dp"
@@ -132,7 +134,7 @@
                 android:layout_width="234dp"
                 android:layout_height="36dp"
                 android:layout_marginStart="30dp"
-                android:layout_marginTop="25dp"
+                android:layout_marginTop="15dp"
                 android:layout_marginEnd="30dp"
                 android:textColor="#2F5FFF"
                 android:textSize="15sp"
@@ -146,7 +148,7 @@
                 android:layout_width="70dp"
                 android:layout_height="40dp"
                 android:layout_marginStart="30dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="15dp"
                 app:cardCornerRadius="10dp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView24">
@@ -159,15 +161,27 @@
                         android:id="@+id/textView22"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="5dp"
                         android:text="09:00"
                         android:textColor="#2F5FFF"
                         android:textSize="15sp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.5"
-                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/imageView31"
                         app:layout_constraintTop_toTopOf="parent"
                         app:layout_constraintVertical_bias="0.5" />
+
+                    <ImageView
+                        android:id="@+id/imageView31"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_marginStart="10dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.5"
+                        app:srcCompat="@drawable/saat" />
                 </androidx.constraintlayout.widget.ConstraintLayout>
             </androidx.cardview.widget.CardView>
 
@@ -176,7 +190,7 @@
                 android:layout_width="70dp"
                 android:layout_height="40dp"
                 android:layout_marginStart="15dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="15dp"
                 app:cardCornerRadius="10dp"
                 app:layout_constraintStart_toEndOf="@+id/birinci"
                 app:layout_constraintTop_toBottomOf="@+id/textView24">
@@ -189,15 +203,26 @@
                         android:id="@+id/textView23"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="5dp"
                         android:text="12:30"
                         android:textColor="#2F5FFF"
                         android:textSize="15sp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.5"
-                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/imageView32"
                         app:layout_constraintTop_toTopOf="parent"
                         app:layout_constraintVertical_bias="0.5" />
+
+                    <ImageView
+                        android:id="@+id/imageView32"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_marginStart="10dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/saat" />
                 </androidx.constraintlayout.widget.ConstraintLayout>
             </androidx.cardview.widget.CardView>
 
@@ -206,7 +231,7 @@
                 android:layout_width="70dp"
                 android:layout_height="40dp"
                 android:layout_marginStart="15dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="15dp"
                 app:cardCornerRadius="10dp"
                 app:layout_constraintStart_toEndOf="@+id/ikinci"
                 app:layout_constraintTop_toBottomOf="@+id/textView24">
@@ -219,17 +244,62 @@
                         android:id="@+id/textView25"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="5dp"
                         android:text="15:30"
                         android:textColor="#2F5FFF"
                         android:textSize="15sp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.5"
-                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/imageView33"
                         app:layout_constraintTop_toTopOf="parent"
                         app:layout_constraintVertical_bias="0.5" />
+
+                    <ImageView
+                        android:id="@+id/imageView33"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_marginStart="10dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/saat" />
                 </androidx.constraintlayout.widget.ConstraintLayout>
             </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/textView61"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="İştirak edənlərin siyahısı"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/birinci" />
+
+            <ImageView
+                android:id="@+id/ac"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="5dp"
+                app:layout_constraintBottom_toBottomOf="@+id/textView61"
+                app:layout_constraintStart_toEndOf="@+id/textView61"
+                app:layout_constraintTop_toTopOf="@+id/textView61"
+                app:srcCompat="@drawable/selectmenuup" />
+
+            <ImageView
+                android:id="@+id/bagla"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="@+id/ac"
+                app:layout_constraintEnd_toEndOf="@+id/ac"
+                app:layout_constraintStart_toStartOf="@+id/ac"
+                app:layout_constraintTop_toTopOf="@+id/ac"
+                app:srcCompat="@drawable/selectmenudoun" />
+
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.cardview.widget.CardView>
@@ -238,7 +308,8 @@
         android:id="@+id/backarrowexamcalendar"
         android:layout_width="25dp"
         android:layout_height="25dp"
-        android:layout_marginStart="30dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="40dp"
         android:clickable="true"
         app:layout_constraintBottom_toTopOf="@+id/constraintLayout2"
         app:layout_constraintStart_toStartOf="parent"
@@ -251,11 +322,20 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="5dp"
-        android:text="Geriyə"
+        android:text="Geri"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/backarrowexamcalendar"
         app:layout_constraintStart_toEndOf="@+id/backarrowexamcalendar"
         app:layout_constraintTop_toTopOf="@+id/backarrowexamcalendar" />
+
+    <TextView
+        android:id="@+id/textView62"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="30dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="@+id/vaxt"
+        app:layout_constraintTop_toBottomOf="@+id/vaxt" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

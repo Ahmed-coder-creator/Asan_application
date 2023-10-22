@@ -35,6 +35,10 @@ class MainActivity4 : AppCompatActivity() {
             startActivity(intent)
             finish()
         }
+        binding.imageView34.setOnClickListener {
+            val  intent=Intent(this,MainActivity2::class.java)
+            startActivity(intent)
+        }
     }
     private fun setup(){
         binding.rvEvents.layoutManager=LinearLayoutManager(this)

@@ -22,11 +22,15 @@ class MainActivity6 : AppCompatActivity() {
             if(binding.email.text.toString().isNullOrEmpty()){
                 binding.email.setError("Boş ola bilməz")
             }else{
-                val intent = Intent(this, MainActivity7::class.java)
-                intent.putExtra("username6",binding.hinted6.text)
-                startActivity(intent)
-                finish()
+                if (binding.email.text.toString()==intent.getStringExtra("email")){
+                    val intent = Intent(this, MainActivity7::class.java)
+                    intent.putExtra("username6",binding.hinted6.text)
+                    startActivity(intent)
+                    finish()
+                }else{
+                    binding.email.setError("E-poçt ünvanı düzgün deyil")
                 }
+            }
 
             }
 

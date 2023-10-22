@@ -8,4 +8,8 @@
     <string name="email">E-poçt ünvanı<font color='#FF0000'>*</font></string>
     <string name="yasasdigiyer">Yaşayış yeri<font color='#FF0000'>*</font></string>
     <string name="qeydiyyatunvani">Qeydiyyat ünvanı<font color='#FF0000'>*</font></string>
+    <string name="dogum">Doğum tarixi<font color='#FF0000'>*</font></string>
+    <string name="Cinsi">Cinsi<font color='#FF0000'>*</font></string>
+    <string name="aila">Ailə vəziyyəti<font color='#FF0000'>*</font></string>
+    <string name="harbi">Hərbi mükəlləfiyyət<font color='#FF0000'>*</font></string>
 </resources>

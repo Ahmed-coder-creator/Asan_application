@@ -12,12 +12,12 @@ class MainActivity17 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
          var message= arrayListOf<MessagesData>(
-            MessagesData("Salam.Necəsən?","12:28",false),
-            MessagesData("Salam yaxşıyam.Sən necəsən?","12:28",true),
-            MessagesData("Həll edə bildin problemi","12:28",false),
-            MessagesData("Hə düzəltdim.Çox sağol","12:28",true),
-            MessagesData("Nə yaxşı.Təbrik edirəm.","12:28",false),
-            MessagesData("Minnətdaram","12:29",true)
+             MessagesData("Salam.Necəsən?","12:28",false),
+             MessagesData("Salam yaxşıyam.Sən necəsən?","12:28",true),
+             MessagesData("Həll edə bildin problemi","12:28",false),
+             MessagesData("Hə düzəltdim.Çox sağol","12:28",true),
+             MessagesData("Nə yaxşı.Təbrik edirəm.","12:28",false),
+             MessagesData("Minnətdaram","12:29",true)
         )
         binding= ActivityMain17Binding.inflate(layoutInflater)
         setContentView(binding.root)

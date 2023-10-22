@@ -16,6 +16,11 @@ class MainActivity10 : AppCompatActivity() {
             startActivity(intent)
             finish()
         }
+        binding.imageView29.setOnClickListener {
+            val intent= Intent(this,MainActivity2::class.java)
+            startActivity(intent)
+            finish()
+        }
         binding.eventmenu.setOnClickListener {
             val intent=Intent(this,MainActivity4::class.java)
             startActivity(intent)

@@ -21,5 +21,9 @@ class MainActivity8 : AppCompatActivity() {
             startActivity(intent)
             finish()
         }
+        binding.imageView37.setOnClickListener {
+            val intent=Intent(this,MainActivity7::class.java)
+            startActivity(intent)
+        }
     }
 }

@@ -39,7 +39,7 @@
                 android:layout_marginStart="36dp"
                 android:src="@drawable/chatactive"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/homemenu"
+                app:layout_constraintStart_toEndOf="@+id/exammenu"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.5" />
 
@@ -50,7 +50,7 @@
                 android:layout_marginStart="36dp"
                 android:src="@drawable/event"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/searchmenu"
+                app:layout_constraintStart_toEndOf="@+id/homemenu"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.5" />
 
@@ -72,7 +72,7 @@
                 android:layout_marginStart="36dp"
                 android:src="@drawable/account"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/exammenu"
+                app:layout_constraintStart_toEndOf="@+id/searchmenu"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.5" />
         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -147,8 +147,9 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvChats"
-        android:layout_width="match_parent"
-        android:layout_height="405dp"
+        android:layout_width="340dp"
+        android:layout_height="407dp"
+        android:layout_marginTop="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/constraintLayout4" />

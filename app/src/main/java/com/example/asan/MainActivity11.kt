@@ -14,14 +14,13 @@ class MainActivity11 : AppCompatActivity() {
         binding = ActivityMain11Binding.inflate(layoutInflater)
         setContentView(binding.root)
         var date= arrayListOf<DateData>(
-            DateData("1","9","2023","K206 2-ci qiymətləndirilmə"),
-            DateData("2","9","2023","K208 1-ci qiymətləndirilmə"),
-            DateData("15","9","2023","K207 2-ci qiymətləndirilmə"),
-            DateData("16","9","2023","K209 1-ci qiymətləndirilmə"),
-            DateData("1","10","2023","K208 2-ci qiymətləndirilmə"),
-            DateData("2","10","2023","K210 1-ci qiymətləndirilmə"),
-            DateData("15","10","2023","K209 2-ci qiymətləndirilmə"),
-            DateData("16","10","2023","K211 1-ci qiymətləndirilmə")
+            DateData("15","10","2023","K205 1-ci qiymətləndirilməsi"),
+            DateData("16","10","2023","K206 1-ci qiymətləndirilməsi"),
+            DateData("5","10","2023","K204 2-ci qiymətləndirilməsi"),
+            DateData("25","10","2023","K202 qrupunun imtahani"),
+        )
+        val istirak= arrayListOf<String>(
+            "Kənan Quliyev","Dürdanə Qasımova","Nigar Əsədova"
         )
         binding.calendarView2.setOnDateChangeListener { calendarView, year, month, day ->
             binding.textView24.text=""
@@ -55,19 +54,16 @@ class MainActivity11 : AppCompatActivity() {
         }
         binding.birinci.setOnClickListener{
             val intent= Intent(this,MainActivity12::class.java)
-            intent.putExtra("vaxt","9:00")
             startActivity(intent)
             finish()
         }
         binding.ikinci.setOnClickListener{
             val intent= Intent(this,MainActivity12::class.java)
-            intent.putExtra("vaxt","12:30")
             startActivity(intent)
             finish()
         }
         binding.ucuncu.setOnClickListener{
             val intent= Intent(this,MainActivity12::class.java)
-            intent.putExtra("vaxt","15:30")
             startActivity(intent)
             finish()
         }
@@ -85,6 +81,20 @@ class MainActivity11 : AppCompatActivity() {
             val intent=Intent(this,MainActivity16::class.java)
             startActivity(intent)
             finish()
+        }
+        binding.ac.setOnClickListener {
+            for(i in istirak){
+                binding.textView62.text=binding.textView62.text.toString()+i+"\n"
+            }
+            binding.ac.visibility=View.INVISIBLE
+            binding.bagla.visibility=View.VISIBLE
+            binding.textView62.visibility=View.VISIBLE
+        }
+        binding.bagla.setOnClickListener {
+            binding.textView62.text=""
+            binding.textView62.visibility=View.INVISIBLE
+            binding.ac.visibility=View.VISIBLE
+            binding.bagla.visibility=View.INVISIBLE
         }
         }
     }
